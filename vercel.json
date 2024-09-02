@@ -1,22 +1,22 @@
 {
   "builds": [
     {
-      "src": "./Backend/server.js",
+      "src": "/Backend/server.js",
       "use": "@vercel/node"
     },
     {
-      "src": "./Frontend/package.json", 
+      "src": "/Frontend/package.json", 
       "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)", 
-      "dest": "./Backend/server.js"
+      "dest": "/Backend/server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "./Frontend/index.html"
+      "dest": "/index.html"
     }
   ]
 }
