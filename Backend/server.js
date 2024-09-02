@@ -11,7 +11,6 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-// Function to format the timestamp as yyyymmddhhmmss
 const formatTimestamp = () => {
     const date = new Date();
     const year = date.getFullYear();
