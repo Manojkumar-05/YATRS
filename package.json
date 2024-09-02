@@ -1,0 +1,14 @@
+{
+    "name": "project-root",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+        "start:frontend": "cd frontend && npm run dev",
+        "start:backend": "cd backend && node server.js",
+        "build": "cd frontend && npm run build"
+    },
+    "dependencies": {
+        "concurrently": "^7.6.0",
+        "wait-on": "^6.0.1"
+    }
+}
