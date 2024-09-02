@@ -14,5 +14,11 @@
       "src": "/Frontend/(.*)", 
       "dest": "/"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)", 
+      "destination": "/"
+    }
   ]
 }
